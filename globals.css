@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow-blur {
+  0%, 100% {
+    background: radial-gradient(ellipse at center, rgba(99,102,241,0.2), transparent 70%);
+  }
+  50% {
+    background: radial-gradient(ellipse at center, rgba(139,92,246,0.3), transparent 70%);
+  }
+}
+
+.animate-glow-blur {
+  animation: glow-blur 6s ease-in-out infinite;
+}
